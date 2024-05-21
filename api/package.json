@@ -1,17 +1,20 @@
 {
   "name": "apitest",
   "version": "1.0.0",
-  "description": "An example test project based on mocha and chai. Testing https://rickandmortyapi.com/api.",
+  "description": "An example test project based on mocha and chai. Testing https://rickandmortyapi.com/.",
   "main": "index.js",
-  "repository": "https://github.com/AwarePL/showcase-2024",
+  "repository": "https://github.com/AwarePL/showcase-2024/api",
   "author": "Łukasz Korchowiec",
   "license": "MIT",
   "private": true,
   "scripts": {
     "test": "mocha"
   },
+  "type": "module",
   "devDependencies": {
     "@eslint/js": "^9.3.0",
+    "@types/chai": "^4.3.16",
+    "dotenv-json": "^1.0.0",
     "eslint": "9.x",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-mocha": "^10.4.3",
