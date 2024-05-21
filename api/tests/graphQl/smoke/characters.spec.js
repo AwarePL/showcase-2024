@@ -27,7 +27,6 @@ describe("Positive Smoke Test for Characters endpoint", () => {
       info = data.data.characters.info;
     });
 
-
     it("Expect to find Rick Sanchez on list of characters", () => {
       characters = characters.map((character) => character.name);
       expect(characters).to.include("Rick Sanchez");
@@ -37,7 +36,7 @@ describe("Positive Smoke Test for Characters endpoint", () => {
       expect(characters.length).to.be.greaterThanOrEqual(20);
     });
 
-      it("Expect info to contain page count of more than 1 for more than 20 resaults", () => {
+    it("Expect info to contain page count of more than 1 for more than 20 resaults", () => {
       if (characters.length > 20) {
         expect(info.pages).to.be.greaterThan(1);
       }

@@ -1,7 +1,5 @@
-# showcase-2024
-
 ## Description
-This is a showcase project for 2024.
+This is a showcase project for API tests based on fetch, chai and mocha. 
 
 ## Installation
 To install and run this project, follow these steps:
@@ -12,15 +10,18 @@ To install and run this project, follow these steps:
     ```
     yarn install
     ```
+4. Alternativly you can build and run docker container
 
 ## Usage
 To use this project, follow these steps:
-
-1. Open the project in your preferred code editor.
-2. Modify the necessary files.
-3. Run the project by executing the following command:
+1. Run the project by executing the following command:
+    In order to run GraphQl test suites run:
     ```
-    yarn run test
+    yarn run test:graphQl
+    ```
+    or for REST test suites run:
+    ```
+    yarn run test:rest
     ```
 
 ## Contact

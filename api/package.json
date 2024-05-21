@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "mocha"
+    "test:graphQl": "mocha tests/graphQl/**",
+    "test:rest": "mocha tests/rest/**"
   },
   "type": "module",
   "devDependencies": {
