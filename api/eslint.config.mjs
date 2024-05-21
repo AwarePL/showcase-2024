@@ -7,7 +7,11 @@ import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
 
 export default [
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
-  { languageOptions: { globals: [globals.mocha, globals.browser, globals.commonjs] } },
+  {
+    languageOptions: {
+      globals: [globals.mocha, globals.browser, globals.commonjs],
+    },
+  },
   {
     "prettier/prettier": [
       "error",
@@ -18,10 +22,12 @@ export default [
       { usePrettierrc: false },
     ],
   },
-  {rules: {
-    "mocha/no-skipped-tests": "error",
-    "mocha/no-exclusive-tests": "error"
-  }},
+  {
+    rules: {
+      "mocha/no-skipped-tests": "error",
+      "mocha/no-exclusive-tests": "error",
+    },
+  },
   pluginJs.configs.recommended,
   mochaPlugin.configs.flat.recommended,
   eslintConfigPrettier,
