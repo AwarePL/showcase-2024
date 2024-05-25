@@ -18,6 +18,6 @@ export default {
   require: "chai/expect",
   retries: 2,
   sort: false,
-  spec: ["**.spec.js"], 
-  timeout: "2000", 
+  spec: ["**.spec.js"],
+  timeout: "2000",
 };
