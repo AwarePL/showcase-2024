@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     - name: Docker build
       run: docker build --tag 'cypress' ./ui
     - name: Docker run
