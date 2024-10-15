@@ -15,6 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: |
-        docker build --tag 'cypress' ./ui 
-        docker run --detach 'cypress'
+    - name: Docker build
+      run: docker build --tag 'cypress' ./ui
+    - name: Docker run
+      run: docker run --detach 'cypress'
+        
