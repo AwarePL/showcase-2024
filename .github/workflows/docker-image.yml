@@ -18,5 +18,5 @@ jobs:
     - name: Docker build
       run: docker build --tag 'cypress' ./ui
     - name: Docker run
-      run: docker run --detach 'cypress'
+      run: docker run 'cypress'
         
