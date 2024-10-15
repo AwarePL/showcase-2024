@@ -1,8 +1,8 @@
 FROM node:current-slim
 WORKDIR /app
-COPY ./.env.json /app/.env.json
-COPY ./package.json /app/package.json
-COPY ./yarn.lock /app/yarn.lock
+COPY ./api/.env.json /app/.env.json
+COPY ./api/package.json /app/package.json
+COPY ./api/yarn.lock /app/yarn.lock
 RUN yarn install --frozen-lockfile
 EXPOSE 5000
 COPY . .
