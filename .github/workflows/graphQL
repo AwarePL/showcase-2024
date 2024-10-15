@@ -1,0 +1,21 @@
+name: Api GraphQl CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Docker build
+      run: docker build --tag 'gql' -f ./api/dockerfile-gql .
+    - name: Docker run
+      run: docker run 'gql'
