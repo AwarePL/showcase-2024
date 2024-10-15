@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
     - uses: actions/checkout@v4
-    - name: Build the Docker image
     - name: Docker build
       run: docker build --tag 'cypress' ./ui
     - name: Docker run
