@@ -16,6 +16,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Docker build
-      run: docker build --tag 'rest' ./api/dockerfile-rest
+      run: docker build --tag 'rest' -f ./api/dockerfile-rest
     - name: Docker run
       run: docker run 'rest'
