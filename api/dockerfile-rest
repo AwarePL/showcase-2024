@@ -1,5 +1,6 @@
 FROM node:current-slim
 WORKDIR /app
+COPY ./api/tests /app/tests
 COPY ./api/.env.json /app/.env.json
 COPY ./api/package.json /app/package.json
 COPY ./api/yarn.lock /app/yarn.lock
